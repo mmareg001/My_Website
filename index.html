@@ -4,6 +4,7 @@
   <head>
      <title>Gloria's Website!</title>
      <link rel="stylesheet" href = "style.css" />
+    
   </head>
     <!-- navigation bar to put on the side -->
  
@@ -21,26 +22,26 @@
         src="/images/headshot.png" alt="headshot"/></br>
     </div>
     
-      <h2 style="text-align: center;  text-transform: uppercase; letter-spacing: 2px;">Gloria Mmare</h2>
+    <div class ="subintro">
+       <h2 style="text-align: center;  text-transform: uppercase; letter-spacing: 2px;">Gloria Mmare</h2>
       <h3 style="text-align: center;">Aspiring Software Engineer | Full Stack Developer | Tech Enthusiast | STEMinist </h3>
-
+    </div>
+     
     <div class="socials">
         <a href="https://www.linkedin.com/in/gloria-mmare-92b07a1b2/?skipRedirect=true" target="_blank" rel="social media">
             <img src="/images/linkedin2.png" alt="linkedin Profile" class="linkedin">
         </a>
-        <a href="https://github.com/mmareg001/PROJECTS" target="_blank" rel="github">
+        <a href="https://github.com/mmareg001" target="_blank" rel="github">
             <img src="/images/github.png" alt="github" class="github">
         </a>
 </div>
        
-
- 
 <div class = "main-container">
 
     <nav class = "main-nav">
-  <div class="navdiv">
+  <div id="navdiv">
   <ul>
-      <li><a href="/about_me.html">About Me</a></li>
+      <li><a href="/index.html">About Me</a></li>
       <li><a href="/experience.html">Experience</a></li>
       <li><a href="/projects.html">Projects</a></li>
       <li><a href ="/community.html">Community Service</a></li>
@@ -49,11 +50,17 @@
     </ul>
 
     </div>
+<!--end of Navigation bar-->
   
   </nav>
-   <main class = "main-content">
-      
   
+    <script>
+    $(function(){
+    $("#navdiv").load("navbar.html");
+    });
+</script>
+
+   <main class = "main-content">
          <h2 class="about-me-heading">About Me</h2>
          <div class="about-me-text">
           <p>Hello there! Welcome to my little corner of the internet. My name is Gloria, I am an aspiring software engineer.  I am currently a student at Coventry University studying Computer Science with Artificial Intelligence, expected to graduate in 2027 with a First Class Honors. I love creating innovative solutions and exploring new technologies. I enjoy the intellectual challenges that software engineering offers; the process of analyzing 
@@ -63,11 +70,36 @@ that provide a seamless user experience. Please feel free to look around my webs
 </p>
         <a href="/about_me.html">Read more about me</a>
          </div>
-   </main>
+         <hr>
 
-</div>
-
-
-</body>
-
+         <div class="tech-stack-container">
+    <h3>My Tech Stack</h3>
+    <p>Here is a list of programming langauges and tools that i work with. I am always eager and open to learning new skills and technologiess:</p>
+    <div class="skills-list">
+        <div class="skill-badge python">
+            <img src="/images/python.png" alt="Python logo"> 
+        </div>
+        <div class="skill-badge cpp">
+            <img src="/images/cpp.png" alt="C++ logo">
+        </div>
+        <div class="skill-badge html5">
+            <img src="/images/html.png" alt="HTML5 logo"> 
+        </div>
+        <div class="skill-badge css3">
+            <img src="/images/css.png" alt="CSS3 logo"> 
+        </div>
+        <div class="skill-badge javascript">
+            <img src="/images/javascript.png" alt="JavaScript logo"> 
+        </div>
+        <div class="skill-badge bash">
+            <img src="/images/bash.png" alt="Bash logo"> 
+        </div>
+        <div class="skill-badge sql">
+            <img src="/images/sql.png" alt="SQL logo"> 
+        </div>
+        <div class="skill-badge powershell">
+            <img src="/images/powershell.png" alt="PowerShell logo"> 
+        </div>
+      </main>
+    </body>
 </html>

@@ -1,6 +1,6 @@
 
 body {
-  background-color: #FAF8F0;
+  background-color: #f9f0fa;
   font-family: 'Inter', sans-serif;
   margin: 0;
   color: #333
@@ -51,13 +51,31 @@ body {
     .introduction {
       margin-left: 0;
       padding: 20px;
+      width: 100%;        /* Make it span the full width */
+      height: auto;  
+      text-align: left;
     }
 
+    
+    .subintro {
+       width: 100%;        /* Make it span the full width */
+      height: auto;  
+      margin-left: 0;
+      padding: 20px;
+      text-align: left;
+    }
+
+      .tech-stack-container {
+      margin-left: 0;
+      padding: 20px;
+    }
+
+    
 }
 
 .main-nav {
   width: 200px;
-  background-color: #a92a2a;
+  background-color: #562975;
   /* font-family: 'Times New Roman', Times, serif; */
   /* padding-left: 10px;
   padding-right: 20px; */
@@ -214,8 +232,94 @@ img {
     text-align: left;
 }
 
-/* applies to all elements in CSS */
-/* * {
-  text-align: center;
-} */
+.tech-stack-container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
 
+.skills-list {
+   
+    flex-wrap: wrap;
+    align-items: left;
+    gap: 5px; /* Space between badges */
+    padding-top: 10px;
+    margin: 15px 0;
+
+      display: grid;
+  /* This next line is the magic part: it creates 4 equal-width columns */
+  grid-template-columns: repeat(4, 1fr);
+  
+  /* This adds a nice space between all the logos */
+  
+  
+  /* Optional: Center the whole grid if it doesn't take up the full page width */
+  width: 80%;
+ 
+}
+
+.skils-list a{
+  text-decoration: none;
+}
+
+
+.skill-badge {
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    display: inline-flex;
+    align-items: center; /* This is key to vertically aligning the image and text */
+    gap: 8px; /* This creates the space between the image and the text */
+}
+
+/* --- NEW: Style for the images inside the badges --- */
+.skill-badge img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0; /* Or just delete this line */
+  object-fit: contain;
+}
+
+
+.experience-heading  {
+  text-align: left;
+  font-size: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.experience-text {
+  /* max-width: 1000px;  */
+  margin: 0 auto; 
+  text-align: left; /* Keep the text aligned to the left for readability */
+   
+}
+
+.experience-text li {
+    font-size: 16px;
+    text-align: left;
+}
+
+.project1 {
+  background-color: blueviolet;
+  box-shadow: 0;
+  padding: 10px;
+  border-radius: 25%;
+}
+
+.project1 h3 {
+  font-size: 20px;
+  color: white;
+  margin: 0 auto;
+}
+
+.project1 p {
+  font-size: 10px;
+  color: white;
+  margin: 0 auto;
+}
+
+.project1 img{
+  width: 100%
+}
